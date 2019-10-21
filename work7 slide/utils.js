@@ -40,7 +40,7 @@ function insertSort(str) {
             sortLog.push([arr.concat(),[j,j - 1]])
             if (arr[j - 1] > arr[j]) {
                 [arr[j - 1],arr[j]] = [arr[j],arr[j - 1]]
-                sortLog.push([arr.concat(),[j,j + 1]])
+                sortLog.push([arr.concat(),[j,j - 1]])
             }
         }
     }
