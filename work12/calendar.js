@@ -20,9 +20,9 @@ function calendar(y){
                 html += '<td colspan="' + w + '"> </td>';
             }
             html += '<td>' + d + '</td>';
-            if (w == 6 && d != max) {
+            if (w == 6 && d != max) {//如果星期六不是该月的最后一天，则换行
                 html += '</tr><tr>';
-            } else if (d == max) {
+            } else if (d == max) {//该月的最后一天，闭合<tr>标签
                 html += '</tr>';
             }
             w = (w + 1 > 6) ? 0 : w + 1;
