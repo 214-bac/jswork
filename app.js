@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.post('/formBuilder', function (rep,res) {
     console.log(rep.body)
-    res.send(rep,body)
+    res.send(rep.body)
 })
 
 app.listen(8080, () => console.log('node express 服务器已启动，监听端口：8080'))
