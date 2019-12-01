@@ -1,7 +1,7 @@
 //定义年历生成函数
 function calendar(y){
     //获取指定年份1月1日的星期数值
-    var w = new Date(y,0).getDate();
+    var w = new Date(y, 0).getDate();
 
     var html = '<div class="box">';
 
@@ -12,10 +12,10 @@ function calendar(y){
         html += '<tr><td>日</td><td>一</td><td>二</td><td>三</td><td>四</td><td>五</td><td>六</td></tr>';
 
         //获取月份m共有多少天
-        var max = new Date(y,m,0).getDate();
+        var max = new Date(y, m, 0).getDate();
 
         html += '<tr>';//开始<tr>标签
-        for (var d = 1;d <= max;++d){
+        for (var d = 1;d <= max; ++d){
             if (w && d == 1){//如果该月的第一天不是星期日，则填充空白
                 html += '<td colspan="' + w + '"> </td>';
             }
