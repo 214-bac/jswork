@@ -27,7 +27,7 @@ function getStyle(obj,attr) {
 }
 var obj = document.getElementById('box');
 obj.onclick = function () {
-    var left = parseInt(Math.random()*200)
-    var top = parseInt(Math.random()*50)
+    var left = parseInt(Math.random()*400);
+    var top = parseInt(Math.random()*100);
     animate(obj, {'left':left, 'top':top});
 };
