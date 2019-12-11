@@ -4,20 +4,20 @@ function $(id) {
 
 $('smallBox').onmouseover = function () {
     $('mask').style.display = 'block';
-    $('smallBox').style.display = 'block';
+    $('bigBox').style.display = 'block';
 };
 
-$('smallBox').onmouseover = function () {
+$('smallBox').onmouseout = function () {
     $('mask').style.display = 'none';
-    $('smallBox').style.display = 'none';
+    $('bigBox').style.display = 'none';
 };
 
-$('smallBox').onmouseover = function (event) {
+$('smallBox').onmousemove = function (event) {
     var event = event || window.event;
     var pageX = event.pageX || event.clientX + document.documentElement.scrollLeft;
     var pageY = event.pageY || event.clientY + document.documentElement.scrollTop;
     var boxX = pageX - $('box').offsetLeft;
-    var boxX = pageY - $('box').offsetTop;
+    var boxY = pageY - $('box').offsetTop;
     var maskX = boxX - $('mask').offsetWidth / 2;
     var maskY = boxY - $('mask').offsetHeight / 2;
     if (maskX < 0) {

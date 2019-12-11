@@ -2,7 +2,7 @@
     width: 350px;
     height: 350px;
     border: 1px solid #ccc;
-    position: relative;
+    position: relative
 }
 
 .big {
@@ -13,7 +13,7 @@
     left: 360px;
     border: 1px solid #ccc;
     overflow: hidden;
-    display: none; 
+    display: none
 }
 
 .mask {
@@ -24,17 +24,17 @@
     top: 0;
     left: 0;
     cursor: move;
-    display: none;
+    display: none
 }
 
 .small {
-    position: relative;
+    position: relative
 }
 
 .box img {
-    vertical-align: top;
+    vertical-align: top
 }
 
 #bigBox img {
-    position: absolute;
+    position: absolute
 }
