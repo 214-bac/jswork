@@ -48,7 +48,7 @@ body {
 
 .box-body input::-webkit-input-placeholder {
     color: #999;
-    -webkit-transition: color .5s;
+   -webkit-transition: color .5s;
 }
 
 .box-body input:focus::-webkit-input-placeholder,
